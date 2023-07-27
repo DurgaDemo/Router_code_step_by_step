@@ -19,6 +19,7 @@ function Nav() {
   <li><NavLink className="nav-bar-link" to='/contact'>Contact</NavLink></li>
   <li><NavLink className="nav-bar-link" to='/filter'>Filter</NavLink></li>
   <li><NavLink className="nav-bar-link" to='/contactus'>Contact Us</NavLink></li>
+  <li><NavLink className="nav-bar-link" to='/login'>Login</NavLink></li>
 
 
 </ul>   

@@ -16,6 +16,8 @@ import Channel from './nestedroute/Channel';
 import Company from './nestedroute/Company';
 import Other from './nestedroute/Other';
 
+import Login from './protectedroute/Login';
+import Protected from './protectedroute/Protected';
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,9 @@ function App() {
       <BrowserRouter>
        <Nav/>
        <Routes>
-       <Route path='/' element={<Home/>}/>
+       {/* <Route path='/' element={<Home/>}/> */}
+       <Route path='/' element={<Protected Component={Home}/>}/>
+       <Route path='/login' element={<Login/>}/>
        <Route path='/about' element={<About/>}/>
        <Route path='/contact' element={<Navigate to='/about'/>}/>
        <Route path='/user/:name' element={<User/>}/>
@@ -38,6 +42,7 @@ function App() {
        <Route path='other' element={<Other/>}/>
 
         </Route>
+
        <Route path='*' element={<Page404/>}/>
        <Route />
        </Routes>
