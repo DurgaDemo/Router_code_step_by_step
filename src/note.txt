@@ -1,0 +1,7 @@
+-> BrowserRouter is the wrapper of React BrowserRouter.
+-> Inside the BrowserRouter we can Define Routes ,Route.
+Ex-1  <Route path='/about' element={<About/>}/>
+Ex-2   <Route path='/contact' element={<Navigate to='/about'/>}/>
+-> By using Link tag we can define link.  Ex-  <Link to='/about'>About</Link> 
+
+-> useParams are used to receive parameter.

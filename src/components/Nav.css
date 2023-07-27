@@ -1,0 +1,22 @@
+.nav_bar{
+    text-align: right;
+}
+
+
+.nav_bar li{
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+.nav-bar-link{
+   color: black; 
+   text-decoration: none;
+}
+
+.nav-bar-link:hover{
+    color: red
+ }
+ .nav_bar .active{
+    color: skyblue;
+    background-color: black;
+ }
