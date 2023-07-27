@@ -5,3 +5,34 @@ Ex-2   <Route path='/contact' element={<Navigate to='/about'/>}/>
 -> By using Link tag we can define link.  Ex-  <Link to='/about'>About</Link> 
 
 -> useParams are used to receive parameter.
+
+Q/A
+
+1.Link vs NavLink
+-> With NavLink we can add custom style and classes
+->With NavLink we can add active link feature
+-> style is not recommened with Link
+
+
+useParams
+----------
+
+-> It is used to get dynamic routing value
+ex- localhost:3000/user/100
+ex-localhost:3000/user/101
+100 is the dynamic value here
+
+useSearchParam
+--------------
+-> it is use for get query params
+ex- localhost:3000/user?id=100
+    id=100 query param here
+
+
+Hash Route vs Browser router
+----------------------------
+
+-> mostly we use Browser Route
+-> Hash Route used for hiding route from the server
+Ex- Browser Route:localhost:3000/about
+Ex- Hash Route: localhost:3000#about
